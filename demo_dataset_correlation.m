@@ -1,14 +1,14 @@
 % -------------------------------------------------------------------------
-%  Description:
+%   Description:
 %       Demo script to show the scatter plot of BT scores between datasets
 %       This script reproduces the results of Figure 6 in our paper.
 %
-%  Citation: 
+%   Citation: 
 %       A Comparative Study for Single Image Blind Deblurring
 %       Wei-Sheng Lai, Jia-Bin Huang, Zhe Hu, Narendra Ahuja, and Ming-Hsuan Yang
 %       IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
 %
-%  Contact:
+%   Contact:
 %       Wei-Sheng Lai
 %       wlai24@ucmerced.edu
 %       University of California, Merced
@@ -33,10 +33,10 @@ vote_filename = fullfile('votes', sprintf('votes_%s_balance_all.csv', x_dataset)
 M = csvread(vote_filename, 1, 0); % offset the first row to skip header
 
 % convert M to winning matrix
-W = construct_winning_matrix(M, num_method);
+C = construct_winning_matrix(M, num_method);
 
 % compute BT scores
-score = BT_EM_exp(W);
+score = BT_EM_exp(C);
     
 % avoid Nan and Inf when compute mean
 s = score;
@@ -54,10 +54,10 @@ vote_filename = fullfile('votes', sprintf('votes_%s_balance_all.csv', y_dataset)
 M = csvread(vote_filename, 1, 0); % offset the first row to skip header
 
 % convert M to winning matrix
-W = construct_winning_matrix(M, num_method);
+C = construct_winning_matrix(M, num_method);
 
 % compute BT scores
-score = BT_EM_exp(W);
+score = BT_EM_exp(C);
     
 % avoid Nan and Inf when compute mean
 s = score;

@@ -1,14 +1,14 @@
 % -------------------------------------------------------------------------
-%  Description:
+%   Description:
 %       Demo script to show grouping results from the significance test
 %       This script reproduces the results of Figure 8 in our paper.
 %
-%  Citation: 
+%   Citation: 
 %       A Comparative Study for Single Image Blind Deblurring
 %       Wei-Sheng Lai, Jia-Bin Huang, Zhe Hu, Narendra Ahuja, and Ming-Hsuan Yang
 %       IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
 %
-%  Contact:
+%   Contact:
 %       Wei-Sheng Lai
 %       wlai24@ucmerced.edu
 %       University of California, Merced
@@ -46,18 +46,18 @@ M = csvread(vote_filename, 1, 0); % offset the first row to skip header
 
 
 %% build winning matrix
-W = construct_winning_matrix(M, num_method);
+C = construct_winning_matrix(M, num_method);
         
 
 %% compute R-threshold
-num_vote = sum(W(:));
+num_vote = sum(C(:));
 alpha = 0.01;
-R_thr = get_Rt(num_method, num_vote, alpha);
+R_thr = get_significance_test_threshold(num_method, num_vote, alpha);
 fprintf('R_thr = %d\n', R_thr);
 
 
 %% use #vote as score
-score = sum(W, 2);
+score = sum(C, 2);
 [score_sort, order_sort] = sort(score, 'descend');
 
 %% grouping

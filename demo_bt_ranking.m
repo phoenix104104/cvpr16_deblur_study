@@ -1,14 +1,14 @@
 % -------------------------------------------------------------------------
-%  Description:
+%   Description:
 %       Demo script to calculate the BT scores
 %       This script reproduces the results of Figure 5 in our paper.
 %
-%  Citation: 
+%   Citation: 
 %       A Comparative Study for Single Image Blind Deblurring
 %       Wei-Sheng Lai, Jia-Bin Huang, Zhe Hu, Narendra Ahuja, and Ming-Hsuan Yang
 %       IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
 %
-%  Contact:
+%   Contact:
 %       Wei-Sheng Lai
 %       wlai24@ucmerced.edu
 %       University of California, Merced
@@ -53,10 +53,10 @@ for i = 1:num_img
     row = find(M(:, 1) == attr_list(i));
     
     % convert M to winning matrix
-    W = construct_winning_matrix(M(row, :), num_method);
+    C = construct_winning_matrix(M(row, :), num_method);
         
     % compute BT scores
-    score = BT_EM_exp(W);
+    score = BT_EM_exp(C);
     
     % avoid Nan and Inf when compute mean
     s = score;

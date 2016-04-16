@@ -1,14 +1,14 @@
 % -------------------------------------------------------------------------
-%  Description:
+%   Description:
 %       Demo script to calculate the Kendall coefficient of agreement
 %       This script reproduces the results of Figure 4 in our paper.
 %
-%  Citation: 
+%   Citation: 
 %       A Comparative Study for Single Image Blind Deblurring
 %       Wei-Sheng Lai, Jia-Bin Huang, Zhe Hu, Narendra Ahuja, and Ming-Hsuan Yang
 %       IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
 %
-%  Contact:
+%   Contact:
 %       Wei-Sheng Lai
 %       wlai24@ucmerced.edu
 %       University of California, Merced
@@ -39,10 +39,10 @@ for a = 1:length(attribute)
     M = csvread(vote_filename, 1, 0); % offset the first row to skip header
 
     %% convert M to winning matrix
-    W = construct_winning_matrix(M, num_method);
+    C = construct_winning_matrix(M, num_method);
 
     %% compute kendall coefficient of agreement
-    k = coefficient_of_agreement(W);
+    k = coefficient_of_agreement(C);
     fprintf(' %10s | %10s | %f\n', dataset, attribute{a}, k);
     
 end
