@@ -1,12 +1,15 @@
 % -------------------------------------------------------------------------
 %  Description:
-%       demo script to synthesize non-uniform blurred images from gyro data
+%       Demo script to synthesize non-uniform blurred images from gyro data
 %
-%  Paper: 
-%       CVPR 2016 A Comparative Study for Single Image Blind Deblurring
+%  Citation: 
+%       A Comparative Study for Single Image Blind Deblurring
+%       Wei-Sheng Lai, Jia-Bin Huang, Zhe Hu, Narendra Ahuja, and Ming-Hsuan Yang
+%       IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
 %
-%  Author: 
+%  Contact:
 %       Wei-Sheng Lai
+%       wlai24@ucmerced.edu
 %       University of California, Merced
 % -------------------------------------------------------------------------
 

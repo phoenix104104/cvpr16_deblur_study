@@ -1,4 +1,20 @@
+% -------------------------------------------------------------------------
+%  Description:
+%       Demo script to calculate the Kendall coefficient of agreement
+%       This script reproduces the results of Figure 4 in our paper.
+%
+%  Citation: 
+%       A Comparative Study for Single Image Blind Deblurring
+%       Wei-Sheng Lai, Jia-Bin Huang, Zhe Hu, Narendra Ahuja, and Ming-Hsuan Yang
+%       IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
+%
+%  Contact:
+%       Wei-Sheng Lai
+%       wlai24@ucmerced.edu
+%       University of California, Merced
+% -------------------------------------------------------------------------
 
+%% input dataset and attributes
 dataset = 'real';
 % dataset = 'uniform';
 % dataset = 'nonuniform';

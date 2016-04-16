@@ -1,7 +1,23 @@
+% -------------------------------------------------------------------------
+%  Description:
+%       Demo script to calculate the BT scores
+%       This script reproduces the results of Figure 5 in our paper.
+%
+%  Citation: 
+%       A Comparative Study for Single Image Blind Deblurring
+%       Wei-Sheng Lai, Jia-Bin Huang, Zhe Hu, Narendra Ahuja, and Ming-Hsuan Yang
+%       IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
+%
+%  Contact:
+%       Wei-Sheng Lai
+%       wlai24@ucmerced.edu
+%       University of California, Merced
+% -------------------------------------------------------------------------
 
-dataset = 'real'; plot_title = 'Real';
-% dataset = 'uniform'; plot_title = 'Uniform';
-% dataset = 'nonuniform'; plot_title = 'Non-Uniform';
+%% input dataset and attribute
+dataset = 'real';
+% dataset = 'uniform';
+% dataset = 'nonuniform';
 
 attribute = 'all';
 % attribute = 'manmade';
@@ -98,9 +114,9 @@ l.FontSize = 16;
 l.Location = 'southeast';
 
 if( strcmp(attribute, 'manmade') )
-    title(sprintf('%s (man-made)', plot_title));
+    title(sprintf('%s (man-made)', dataset));
 else
-    title(sprintf('%s (%s)', plot_title, attribute));
+    title(sprintf('%s (%s)', dataset, attribute));
 end
 xlabel('B-T Scores');
 ylabel('Cumulative Frequency');

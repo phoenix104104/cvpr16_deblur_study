@@ -1,4 +1,20 @@
+% -------------------------------------------------------------------------
+%  Description:
+%       Demo script to show the scatter plot of BT scores between datasets
+%       This script reproduces the results of Figure 6 in our paper.
+%
+%  Citation: 
+%       A Comparative Study for Single Image Blind Deblurring
+%       Wei-Sheng Lai, Jia-Bin Huang, Zhe Hu, Narendra Ahuja, and Ming-Hsuan Yang
+%       IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
+%
+%  Contact:
+%       Wei-Sheng Lai
+%       wlai24@ucmerced.edu
+%       University of California, Merced
+% -------------------------------------------------------------------------
 
+%% input datasets
 x_dataset = 'uniform'; y_dataset = 'real'; 
 % x_dataset = 'nonuniform'; y_dataset = 'real'; 
 % x_dataset = 'uniform'; y_dataset = 'nonuniform'; 
@@ -52,9 +68,7 @@ s = s(s ~= Inf); % remove Inf
 y_score = score - mean(s);
 
 
-
 %% plot
-
 [color, marker, line_style] = color_spec;
 
 figure;hold on;
