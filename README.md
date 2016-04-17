@@ -28,12 +28,16 @@ If you find the code and datasets useful in your research, please cite:
     }
 
 ### Contents
-|  Folder    | description |
+|  Folder/Files    | Description |
 | ---|---|
-| attributes | lists of image id for each attribute |
-| list | lists of image names for our datasets |
-| votes | user voting results |
+| attributes/ | lists of image id for each attribute |
+| list/ | lists of image names for our datasets |
+| votes/ | user voting results |
 | *.m | MATLAB code |
 | BT_scores.pdf | A slide described the algorithm and implementation details of the BT scores |
 
+Our code is implemented and tested on Windows 7 / Ubuntu 14.04 with MATLAB R2015a.
+
 Run `demo_bt_ranking.m`, `demo_dataset_correlation.m`, `demo_kendall.m`, and `demo_significance_test.m` to reproduce the analysis in our paper.
+
+Our datasets could be downloaded from the [project webpage](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/).
