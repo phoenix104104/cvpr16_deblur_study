@@ -11,14 +11,14 @@ This is the research code for the paper:
 and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), 
 "A Comparative Study for Single Image Blind Deblurring", IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2016 
 
-[PDF](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/paper/cvpr16_deblur_study_supp.pdf)
+[Project webpage](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/)
 
-[Project page](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/).
+[PDF](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/paper/cvpr16_deblur_study_supp.pdf)
 
 
 ### Citation
 
-If you find the code and dataset useful in your research, please cite:
+If you find the code and datasets useful in your research, please cite:
 
     @inproceedings{Lai-CVPR-2016,
         author    = {Wei-Sheng Lai, Jia-Bin Huang, Zhe Hu, Narendra Ahuja, and Ming-Hsuan Yang}, 
@@ -30,13 +30,10 @@ If you find the code and dataset useful in your research, please cite:
 ### Contents
 |  Folder    | description |
 | ---|---|
-|cache | cached data for vanishing point detection|
-|data|Testing images of five datasets (Set5, Set14, Urban 100, BSD 100, Sun-Hays 80). All the images have been cropped according to the desired super-resolution factor. This avoids misalignment of the groundtruth high-resolution images and the super-resolved images|
-|external|We use the vgg_interp2 from `imrender` to perform bilinear interpolation|
-|quant_eval|Quantitative evaluation code|
-|reference| A copy of the CVPR paper and the bibtex|
-|source|MATLAB source code|
+| attributes | lists of image id for each attribute |
+| list | lists of image names for our datasets |
+| votes | user voting results |
+| *.m | MATLAB code |
+| BT_scores.pdf | A slide described the algorithm and implementation details of the BT scores |
 
-To run the algorithm on all datasets, simply run the `sr_demo_bacth.m`. Note that it is an educational code that is not optimized for speed. If timing is a concern, you can achieve visually similar results with small numbers of iterations, e.g., set the number of iterations `opt.numIter = 5;` in the file `sr_init_opt.m`. An example of the speed and quality trade-off can be found in Fig. 10 in the paper.
-
-Feedbacks and comments are welcome! Feel free to contact me via jbhuang1@illinois.edu.
+Run `demo_bt_ranking.m`, `demo_dataset_correlation.m`, `demo_kendall.m`, and `demo_significance_test.m` to reproduce the analysis in our paper.
