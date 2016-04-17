@@ -13,7 +13,7 @@ and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/),
 
 [Project webpage](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/)
 
-[PDF](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/paper/cvpr16_deblur_study_supp.pdf)
+[Paper](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/paper/cvpr16_deblur_study_supp.pdf)
 
 
 ### Citation
