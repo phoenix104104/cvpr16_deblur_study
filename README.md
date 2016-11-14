@@ -40,4 +40,4 @@ Our code is implemented and tested on Windows 7 / Ubuntu 14.04 with MATLAB R2015
 
 Run `demo_bt_ranking.m`, `demo_dataset_correlation.m`, `demo_kendall.m`, and `demo_significance_test.m` to reproduce the analysis in our paper.
 
-Our datasets could be downloaded from the [project webpage](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/).
+Our datasets could be downloaded from the [project webpage](http://vllab1.ucmerced.edu/~wlai24/cvpr16_deblur_study/).
