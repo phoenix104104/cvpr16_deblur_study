@@ -11,9 +11,9 @@ This is the research code for the paper:
 and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), 
 "A Comparative Study for Single Image Blind Deblurring", IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2016 
 
-[Project webpage](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/)
+[Project webpage](http://vllab1.ucmerced.edu/~wlai24/cvpr16_deblur_study/)
 
-[Paper](http://vllab.ucmerced.edu/~wlai24/cvpr16_deblur_study/paper/cvpr16_deblur_study.pdf)
+[Paper](http://vllab1.ucmerced.edu/~wlai24/cvpr16_deblur_study/paper/cvpr16_deblur_study.pdf)
 
 
 ### Citation
