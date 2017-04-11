@@ -21,7 +21,7 @@ and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/),
 If you find the code and datasets useful in your research, please cite:
 
     @inproceedings{Lai-CVPR-2016,
-        author    = {Wei-Sheng Lai, Jia-Bin Huang, Zhe Hu, Narendra Ahuja, and Ming-Hsuan Yang}, 
+        author    = {Lai, Wei-Sheng and Huang, Jia-Bin and Hu, Zhe and Ahuja, Narendra and Yang, Ming-Hsuan}, 
         title     = {A Comparative Study for Single Image Blind Deblurring}, 
         booktitle = {IEEE Conferene on Computer Vision and Pattern Recognition},
         year      = {2016}
